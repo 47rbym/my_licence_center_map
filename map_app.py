@@ -114,8 +114,6 @@ else:
 
 # ベース地図
 m = folium.Map(
-    width="100%",
-    height=450,
     tiles=None, 
     # スマホでページをスクロールしたい時に、地図が動いてしまうのを防ぐ設定
     scrollWheelZoom=False, 
@@ -193,7 +191,11 @@ m.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
 st_folium(
     m, 
     width="100%",        # 横幅いっぱい
-    height=600,          # スマホの縦画面を考慮した高さ
+    height=500,          # スマホの縦画面を考慮した高さ
     use_container_width=True, # コンテナの幅に合わせる
     returned_objects=[]
 )
+
+# 地図の下に少しだけ余白を入れる（これだけでスマホ操作が激変します！）
+st.write("") 
+st.write("")
