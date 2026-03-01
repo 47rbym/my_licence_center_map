@@ -190,7 +190,7 @@ m.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
 # width="100%" に加え、use_container_width=True を使うのが最近のStreamlit流です
 st_folium(
     m, 
-    width="100%",        # 横幅いっぱい
+    width="97%",        # 横幅いっぱい
     height=500,          # スマホの縦画面を考慮した高さ
     use_container_width=True, # コンテナの幅に合わせる
     returned_objects=[]
