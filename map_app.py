@@ -99,7 +99,7 @@ else:
 # ベース地図
 m = folium.Map(
     tiles=None, 
-    scrollWheelZoom=False, 
+    scrollWheelZoom=True, 
     dragging=True
 )
 
