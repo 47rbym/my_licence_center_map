@@ -114,6 +114,8 @@ else:
 
 # ベース地図
 m = folium.Map(
+    width="100%",
+    height=450,
     tiles=None, 
     # スマホでページをスクロールしたい時に、地図が動いてしまうのを防ぐ設定
     scrollWheelZoom=False, 
